@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:rgb(231, 226, 226);
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu-list {
+    background-color: #333;
+    width: 1200px;
+    margin: 0 auto;
+    height: 120px;
+    line-height: 45px;
+  
+}
+.menu-list li {
+    float: left;
+    /*width: 240px;*/
+    width: 190px;
+    text-align: center;
+   margin-top: 36px;
+}
+.menu-list li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+
+}
+.menu-list li a:hover {
+    color: bisque;
+    background-color: gray;
+    font-size: 20px;
+}
+.hide {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.menu-list li:hover .hide {
+    display: block;
+}
+.hide li {
+    float: none;
+    margin-top: -6px;
+}
+.hide li a {
+background-color: rgb(45, 43, 43);
+color: white;
+}
+li img {
+    width: 240px;
+    height: 119px;
+   
+    position: absolute;
+}
+#img {
+    margin: 1px auto;
+    padding-right: 240px;
+    box-sizing: border-box;
+}
+@keyframes lunbo {
+    0%,
+    20%{
+         transform: translate(0px, 0px);
+    }
+
+    25% ,
+    45%{
+         transform: translate(-1200px, 0px);
+    }
+
+    50% ,
+    70%{
+         transform: translate(-1200px, 0px);
+    }
+
+    75% ,
+    95%{
+        transform: translate(-2400px, 0px);
+    }
+           
+    100% {
+        transform: translate(-2400px, 0px);
+    }
+}
+.lunbo {
+    width: 1200px;
+    height: 280px;
+    overflow: hidden; 
+    margin: 0 auto;
+}
+.lunbo-img{
+    width: 6000px;
+}
+.lunbo img {
+    width: 1200px;
+    height: 280px;
+    float: left;
+    /*
+     使用上面定义的轮播图效果动画。
+     值分别是：动画名称  动画执行实现  运动曲线(lineae:匀速)  infinite：循环滚动
+    */
+    animation: lunbo 12s linear  infinite ;
+  }
+.img{
+        width: 1200px;
+        height: 280px;
+        margin-bottom: 10px;
+  }
+  .word {
+    width: 1200px;
+    margin: -1px auto;
+    background-color: white;
+  }
+ .word h1 {
+      text-align: center;
+      font-size: 30px;
+  }
+ .word p {
+      font-size: 20px;
+      text-indent: 2em;
+      margin: auto 30px;
+  }
+ .word h2 {
+      font-size: 25px;
+      text-align: center;
+  }
+  .word div {
+    text-align: center;
+  }
+  .footer .copyright {
+    width: 1200px;
+    height: 60px;
+    background-color: #333;
+    margin:  0 auto;
+}
+ .footer .copyright p {
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 20px;
+}
+.fenlei{
+    margin-left: 20px;
+    text-align: left;
+}
+.name {  
+    margin-bottom: -20px;
+    font-size: 20px;
+    color: white;
+    margin-top: 18px;
+} 
+#menu {
+    position: fixed;
+    margin-left: 0px;
+    top: 115px;
+}
+#menu ul li a:hover, #menu ul li a.current {
+    color: #fff;
+    background-color: #333;
+}
+#menu ul li a {
+    display: block;
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    width: 75px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    text-align: center;
+}

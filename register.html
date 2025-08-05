@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <title>注册页面</title>
+    <link rel="stylesheet" href="css/register.css" />
+  </head>
+
+  <body>
+    <div id="formContainer" class="dwo">
+      <div class="formRight">
+        <form id="register" class="otherForm">
+          <header>
+            <h1>用户注册</h1>
+          </header>
+          <section>
+            <label>
+              <p>用户名</p>
+              <input type="text" id="username" />
+              <div class="border"></div>
+            </label>
+            <label>
+              <p>邮箱</p>
+              <input type="email" id="email" onblur="checkEmail()" />
+              <div class="border"></div>
+            </label>
+            <label>
+              <p>密码</p>
+              <input type="password" id="pwd" />
+              <div class="border"></div>
+            </label>
+            <label>
+              <p>重复密码</p>
+              <input type="password" id="repwd" />
+              <div class="border"></div>
+            </label>
+            <button id="btn" type="button">注 册</button>
+          </section>
+          <footer>
+            <a href="login.html">返 回</a>
+          </footer>
+        </form>
+      </div>
+    </div>
+    <script src="js/register.js"></script>
+  </body>
+</html>

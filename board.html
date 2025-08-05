@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板</title>
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/board.css">
+    <style>
+        body {
+            background-color: gray;
+        }
+        .box {
+            margin: 0 auto;
+            width: 1200px;
+            height: 1200px;
+           background-color: white;
+        }
+  
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>
+            <ul class="menu-list">
+                <li id="img"><img src="images/logo.png" alt=""></li>
+                <li><a href="index.html">首页</a></li>
+                <li>
+                    <a href="tezheng.html">艺术特征</a>
+                    <ul class="hide">
+                        <li><a href="tezheng.html#fangshi">作画方式</a></li>
+                        <li><a href="tezheng.html#liufa">古代绘画六法</a></li>
+                        <li><a href="tezheng.html#tedian">传统绘画特点</a></li>
+                   </ul>
+                </li>
+                <li>
+                    <a href="jifa.html">技法</a>
+                    <ul class="hide">
+                        <li><a href="gaishu.html">技法概述</a></li>
+                        <li><a href="dongyuan.html">董源山水画</a></li>
+                   </ul>
+                </li>
+                <li>
+                    <a href="list-help.html">其他帮助</a>
+                    <ul class="hide">
+                        <li><a href="board.html">留言板</a></li>
+                        <li><a href="about us.html">关于我们</a></li>
+                    </ul>
+                </li>
+                <li class="name" style="margin-top: 18px;">
+                    <p class="time"></p>
+                    <p id="welcome" >xxx,欢迎您</p>   
+                </li>
+            </ul>
+        </div>
+    <div class="box">
+        <h1 style="color: black;font-size: 70px;font-weight: bold;">国画文化</h1>
+        <ul class="comment-header">
+            <li>按热度排序</li>
+            <li>按时间排序</li>
+          </ul>
+          <div class="comment-send">
+            <div class="user-face">
+              <img id="avatar" src="images/0.jpg" alt="" />
+            </div>
+            <div class="textarea-comtainer">
+              <input type="text" placeholder="请输入昵称" id="name" />
+              <textarea name="" id="txt" placeholder="发一条友善的评论"></textarea>
+              <button class="comment-submit" id="btn">发表<br/>评论</button>
+            </div>
+          </div>
+          <div class="reply-wrap">
+            <div class="user-face"></div>
+            <div class="right">
+              <div class="reply-item">
+                <div class="user">
+                  <div class="user-face">
+                    <img src="images/1.jpg" alt="" />
+                  </div>
+                  <div class="user-name">klf</div>
+                  <p>感谢这个平台，给了我了解国画的机会！</p>
+                </div>
+                <div>
+                  <span>2021-10-16 11:58</span>
+                  <span><a class="remove" href="#">删除</a></span>
+                </div>
+              </div>
+              <div class="reply-item">
+                <div class="user">
+                  <div class="user-face">
+                    <img src="images/2.jpg" alt="" />
+                  </div>
+                  <div class="user-name">小klf</div>
+                  <p>国画一直是我们中华优秀传统文化，应当好好学习！</p>
+                </div>
+                <div>
+                  <span>2021-10-16 11:58</span>
+                  <span><a class="remove" href="#">删除</a></span>
+                </div>
+              </div>
+              <div class="reply-item">
+                <div class="user">
+                  <div class="user-face">
+                    <img src="images/3.jpg" alt="" />
+                  </div>
+                  <div class="user-name">小小klf</div>
+                  <p>国画是中华民族的精神支柱，是中华文明的瑰宝！</p>
+                </div>
+                <div>
+                  <span>2021-10-16 12:09</span>
+                  <span><a class="remove" href="#">删除</a></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="new"></div>
+    </div>
+    <div class="footer">
+        <div class="copyright">
+            <p>Copyright © 2018-2023 广州klf有限公司 All rights reserved 粤ICP备666号 </p>
+        </div>
+    </div>
+    <script src="js/board.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
